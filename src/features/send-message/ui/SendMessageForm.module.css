@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.field {
+  position: relative;
+  flex: 1;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(16, 35, 47, 0.15);
+}
+
+.field:focus-within {
+  box-shadow: 0 0 0 2px var(--tg-accent);
+}
+
+.input {
+  flex: 1;
+  box-sizing: border-box;
+  min-height: 48px;
+  max-height: 200px;
+  padding: 13px 16px;
+  border: 0;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--gray-12);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.375;
+  field-sizing: content;
+}
+
+.counter {
+  position: absolute;
+  right: 12px;
+  bottom: 4px;
+  font-size: 11px;
+  color: var(--gray-10);
+}
+
+.send {
+  flex-shrink: 0;
+}

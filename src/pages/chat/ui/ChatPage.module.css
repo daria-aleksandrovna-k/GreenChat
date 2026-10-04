@@ -1,0 +1,51 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.sidebar {
+  min-width: 0;
+  overflow: hidden;
+  border-right: 1px solid var(--tg-border);
+}
+
+.main {
+  min-width: 0;
+  overflow: hidden;
+  background-color: var(--tg-chat-bg);
+  background-image: var(--tg-chat-pattern);
+}
+
+.empty {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.emptyBadge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(76, 100, 62, 0.4);
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .layout[data-chat-open] .sidebar {
+    display: none;
+  }
+
+  .layout:not([data-chat-open]) .main {
+    display: none;
+  }
+
+  .sidebar {
+    border-right: 0;
+  }
+}

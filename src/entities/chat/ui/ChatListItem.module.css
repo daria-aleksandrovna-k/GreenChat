@@ -1,0 +1,48 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.item:hover {
+  background: var(--tg-hover);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--tg-accent);
+  outline-offset: -2px;
+}
+
+.item[data-active] {
+  background: var(--tg-active);
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.time {
+  flex-shrink: 0;
+}
+
+.badge {
+  flex-shrink: 0;
+  min-width: 22px;
+  justify-content: center;
+}

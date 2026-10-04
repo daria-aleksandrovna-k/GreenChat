@@ -1,0 +1,6 @@
+export { createLocalId } from './id'
+export { getInitials } from './initials'
+export { formatPhone, isValidPhone, normalizePhone, toChatId } from './phone'
+export { syncAcrossTabs } from './sync-tabs'
+export { formatChatTime, formatDayLabel, formatTime, isSameDay } from './time'
+export { useTabLock } from './use-tab-lock'

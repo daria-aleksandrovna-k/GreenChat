@@ -1,0 +1,32 @@
+:root {
+  --tg-accent: #3390ec;
+  --tg-hover: #f4f4f5;
+  --tg-active: #dcebfd;
+  --tg-border: #dfe1e5;
+  --tg-bubble-in: #ffffff;
+  --tg-bubble-out: #eeffde;
+  --tg-meta: #8c98a4;
+  --tg-meta-out: #4fae4e;
+  --tg-chat-bg: #c5d9a8;
+  --tg-chat-pattern:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.25) 0 3px, transparent 4px),
+    linear-gradient(135deg, #d4e3b5 0%, #b9d4a0 40%, #a3c99c 70%, #cddfae 100%);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.radix-themes {
+  --default-font-family:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+}

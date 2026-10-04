@@ -1,0 +1,23 @@
+.page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background-color: var(--tg-chat-bg);
+  background-image: var(--tg-chat-pattern);
+}
+
+.card {
+  width: min(420px, 100%);
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--tg-accent);
+  color: #fff;
+}
